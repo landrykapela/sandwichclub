@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:paddingBottom="@dimen/standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginEnd="@dimen/small"
+            android:layout_marginStart="@dimen/small"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/sandwich_picture_content_description"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/caption"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginStart="@dimen/small"
+            android:layout_marginTop="16dp"
+            android:text="@string/detail_also_known_as_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_iv" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/caption"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginRight="@dimen/standard"
+            android:layout_marginTop="16dp"
+            android:text="@string/detail_place_of_origin_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/also_known_tv" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/caption"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginRight="@dimen/standard"
+            android:layout_marginTop="16dp"
+            android:text="@string/detail_ingredients_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/origin_tv" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/caption"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginRight="@dimen/standard"
+            android:layout_marginTop="16dp"
+            android:text="@string/detail_description_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_tv" />
+
+        <TextView
+            android:id="@+id/also_known_tv"
+            style="@style/body"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginRight="@dimen/standard"
+            android:layout_marginStart="@dimen/standard"
+            android:layout_marginLeft="@dimen/standard"
+            android:layout_marginTop="@dimen/small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/origin_tv"
+            style="@style/body"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginRight="@dimen/standard"
+            android:layout_marginStart="@dimen/standard"
+            android:layout_marginLeft="@dimen/standard"
+            android:layout_marginTop="@dimen/small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/also_known_tv"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+         <TextView
+            android:id="@+id/ingredients_tv"
+            style="@style/body"
+            android:justificationMode="none"
+            android:layout_marginEnd="@dimen/standard"
+            android:layout_marginRight="@dimen/standard"
+            android:layout_marginStart="@dimen/standard"
+            android:layout_marginLeft="@dimen/standard"
+            android:layout_marginTop="@dimen/small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/also_known_tv"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/description_tv"
+                style="@style/body"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/standard"
+                android:layout_marginStart="@dimen/standard"
+                android:layout_marginTop="@dimen/small"
+                android:justificationMode="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>
